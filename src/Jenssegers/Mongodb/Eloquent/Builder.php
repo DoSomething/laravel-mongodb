@@ -146,9 +146,9 @@ class Builder extends EloquentBuilder
     /**
      * @inheritdoc
      */
-    public function chunkById($count, callable $callback, $column = '_id')
+    public function chunkById($count, callable $callback, $column = '_id', $alias = null)
     {
-        return parent::chunkById($count, $callback, $column);
+        return parent::chunkById($count, $callback, $column, $alias);
     }
 
     /**
